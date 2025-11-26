@@ -1,0 +1,710 @@
+
+
+
+
+/* Style du menu */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+
+
+
+
+
+
+
+header {
+    background: rgba(10, 0, 95, 0.7); 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* pour Safari */
+}
+
+
+
+
+
+
+
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+.menu li {
+    margin: 0 20px;
+}
+
+
+
+
+
+
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+
+
+
+
+
+
+.menu a:hover {
+    color: #ff9800;
+}
+
+
+
+
+
+
+
+
+/* Sections */
+section {
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+  min-height: 100vh;
+transition: background-color 0.8s ease-in-out;
+}
+
+
+
+
+#section1 {
+    display: flex;                
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+
+
+.texte {
+    flex: 1 1 300px;
+    display: flex;            
+    flex-direction: column;    
+    gap: 10px;    
+    margin-top: 80px;            
+}
+
+
+
+
+.texte h1 {
+    font-size: 72px;        
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, #0c6094, #194391, #5d0c94, #7b1991 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+    
+    
+}
+
+.texte h1:hover {
+  transform: scale(1.5); /* agrandit le bouton */
+}
+
+.video-droite {
+    flex: 1 1 auto;
+    max-width: 70%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+
+
+h1{
+    font-size: 40px;        
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, #0871b7, #013ba5, #59088f, #620277 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+    
+    
+}
+
+h1:hover {
+  transform: scale(1.1); /* agrandit le bouton */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#section1 { background: #9fc2fc; }
+#section2 { background: #81abff; }
+#section3 { background: #5790e6; }
+#section4 { background: #4f75bd; }
+#section5 { background: #245ec9; }
+
+
+
+
+
+
+
+
+/* Ajout d'un effet fluide au scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.montserrat-mm {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+/*Forme autour des contacts*/
+.contact-cards {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-card {
+    background: linear-gradient(135deg, #7868d2, #362e51);  
+    color: white;
+    border-radius: 15px;
+    padding: 10px 10px;
+    text-align: center;
+    min-width: 180px;
+    box-shadow: 0 8px 2px rgba(35, 32, 53, 0.5);   
+    transition: transform 0.3s;
+}
+
+
+
+
+.contact-card1 {
+    background: linear-gradient(135deg, #7868d2, #362e51);  
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-align: center;
+    min-width: 140px;
+    box-shadow: 0 8px 2px rgba(35, 32, 53, 0.5);
+    transition: transform 0.3s;   
+}
+
+
+
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #6650dd, #1a0951);  
+    box-shadow: 0 8px 8px rgba(0,0,0,0.3);
+
+}
+
+
+
+
+.contact-card1:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #6650dd, #1a0951);  
+    box-shadow: 0 8px 8px rgba(0,0,0,0.3);
+
+}
+
+
+
+
+.emoji {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.coordonnees {
+    font-size: 18px;
+    align-items: center;  
+    gap: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+
+
+
+.contact-card a {
+    color: white;        
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 0px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+    .contact-card1 a {
+    color: white;        
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+.contact-card a:hover {
+    color: #8286ad;    
+    transform: scale(1.1); /* agrandit le bouton */
+        
+}
+
+
+.contact-card1 a:hover {
+    color: #8286ad;   
+    transform: scale(1.1); /* agrandit le bouton */
+         
+}
+
+
+
+/*style pour les images*/
+.images {
+    width: 100%;        
+    max-width: 560px;  
+    height: auto;        
+    display: block;
+    margin: 0 left;
+    border-radius: 15px;    
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03); /* zoom léger */
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 2px rgba(35, 32, 53, 0.5);
+   
+}
+
+.images:hover{
+  transform: scale(1.1); /* agrandit le bouton */
+  box-shadow: 0 8px 30px rgba(35, 32, 53, 0.5);
+
+}
+
+
+.contact-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 30px
+
+
+
+
+}
+
+
+
+
+
+
+ /* Le bouton */
+  .open-btn {
+    display: inline-block;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #0078ff;
+    border-radius: 5px;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3); 
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 2px rgba(35, 32, 53, 0.5);
+}
+
+
+   
+
+.open-btn:hover {
+  transform: scale(1.5); /* agrandit le bouton */
+  box-shadow: 0 8px 30px rgba(35, 32, 53, 0.5);
+}
+
+.open-btn {
+  background: rgb(138, 175, 235);
+  border-radius: 15px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  padding: 20px;
+
+  /* animation smooth */
+  transition: all 0.25s ease;
+  transform: scale(1);
+  box-shadow: 0 8px 2px rgba(35, 32, 53, 0.5);
+}
+
+/* Effet quand la souris passe dessus */
+.open-btn:hover {
+  transform: scale(1.03); /* zoom léger */
+  box-shadow: 0 8px 30px rgba(35, 32, 53, 0.5); /* ombre apparente */
+  background: rgb(118, 170, 255);
+}
+
+
+
+  /* L’arrière-plan de la popup */
+  .overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+
+  /* La boîte popup */
+  .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1200px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+
+    @media (max-width: 600px) {
+  .popup {
+    width: 90%;
+  }
+}
+   
+  }
+ .popup {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+
+  /* Le bouton de fermeture */
+  .close-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #891a0e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+.close-btn:hover {
+  transform: scale(1.5); /* agrandit le bouton */
+}
+
+
+  /* Quand le lien est ciblé, on affiche la popup */
+  #popup:target {
+    display: flex;
+  }
+
+
+  /* Slider interne */
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    transition: transform 0.7s;
+  }
+
+
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-fit: cover; /* remplit sans déformer */
+    object-position: center; /* centre bien l’image */
+  }
+
+
+  /* Radios pour navigation */
+  input[type=radio] {
+    display: none;
+  }
+
+
+  #slide1:checked ~ .slides { transform: translateX(0%); }
+  #slide2:checked ~ .slides { transform: translateX(-33.33%); }
+  #slide3:checked ~ .slides { transform: translateX(-66.66%); }
+
+
+  /* Boutons du slider */
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+
+  .navigation label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+
+  .navigation label:hover {
+    opacity: 1;
+  }
+
+
+  .slider {
+  width: 700px;       /* largeur du diapo */
+  height: 350px;      /* hauteur du diapo */
+  overflow: hidden;   /* cache ce qui dépasse */
+  border-radius: 10px;
+  position: relative;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+
+.slide {
+  flex: 1 0 100%;
+  height: 100%;
+}
+
+
+.slide img {
+  width: 34%;
+  height: 100%;
+  object-fit: cover; /* garde les images bien cadrées */
+  display: block;
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+
+/* Positions selon l’image choisie */
+#s1:checked ~ .slides { transform: translateX(0%); }
+#s2:checked ~ .slides { transform: translateX(-100%); }
+#s3:checked ~ .slides { transform: translateX(-200%); }
+
+
+.nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+
+.nav label {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+
+.nav label:hover {
+  opacity: 1;
+}
+
+
+.container-texte {
+  background: rgb(138, 175, 235);
+  border-radius: 15px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  padding: 20px;
+
+  /* animation smooth */
+  transition: all 0.25s ease;
+  transform: scale(1);
+  box-shadow: 0 8px 2px rgba(35, 32, 53, 0.5);
+}
+
+/* Effet quand la souris passe dessus */
+.container-texte:hover {
+  transform: scale(1.03); /* zoom léger */
+  box-shadow: 0 8px 30px rgba(35, 32, 53, 0.5); /* ombre apparente */
+  background: rgb(118, 170, 255);
+   font-weight: bold;
+}
+
+/*Texte à propos*/
+
+.container-texte1 {
+  background: rgb(82, 141, 229);
+  border-radius: 15px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  padding: 20px;
+  float: right;
+  margin-top: -400px;
+  box-shadow: 0 8px 2px rgba(35, 32, 53, 0.5);
+
+
+
+  /* animation smooth */
+  transition: all 0.25s ease;
+  transform: scale(1);
+}
+
+/* Effet quand la souris passe dessus */
+.container-texte1:hover {
+  transform: scale(1.03); /* zoom léger */
+  box-shadow: 0 8px 30px rgba(35, 32, 53, 0.5); /* ombre apparente */
+  background: rgb(49, 120, 235);
+   font-weight: bold;
+}
+.texte-à-propos{
+  text-align: initial;
+}
+
+
+/*contact*/
+.container-texte2 {
+  background: rgb(34, 90, 179);
+  border-radius: 15px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  padding: 2px;
+  margin: 25px;
+  box-shadow: 0 8px 2px rgba(35, 32, 53, 0.5);
+  display: inline-block; /* il va shrink/expand selon le texte */
+  width: auto; /* au cas où t'as sali le code avant */
+  max-width: fit-content; /* optionnel mais propre */
+  
+
+
+  /* animation smooth */
+  transition: all 0.25s ease;
+  transform: scale(1);
+}
+
+/* Effet quand la souris passe dessus */
+.container-texte2:hover {
+  transform: scale(1.03); /* zoom léger */
+  box-shadow: 0 8px 30px rgba(35, 32, 53, 0.5); /* ombre apparente */
+  background: rgb(25, 103, 230);
+  font-weight: bold;
+}
